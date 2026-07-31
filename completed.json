@@ -1,0 +1,117 @@
+{
+  "1": {
+    "python": "✅",
+    "typescript": "❌",
+    "go": "✅"
+  },
+  "2": {
+    "python": "✅",
+    "typescript": "❌",
+    "go": "❌"
+  },
+  "3": {
+    "python": "✅",
+    "typescript": "✅",
+    "go": "❌"
+  },
+  "4": {
+    "python": "✅",
+    "typescript": "✅",
+    "go": "❌"
+  },
+  "5": {
+    "python": "❌",
+    "typescript": "✅",
+    "go": "❌"
+  },
+  "6": {
+    "python": "❌",
+    "typescript": "✅",
+    "go": "❌"
+  },
+  "7": {
+    "python": "❌",
+    "typescript": "✅",
+    "go": "❌"
+  },
+  "8": {
+    "python": "❌",
+    "typescript": "✅",
+    "go": "❌"
+  },
+  "9": {
+    "python": "✅",
+    "typescript": "❌",
+    "go": "❌"
+  },
+  "10": {
+    "python": "✅",
+    "typescript": "❌",
+    "go": "❌"
+  },
+  "11": {
+    "python": "✅",
+    "typescript": "❌",
+    "go": "❌"
+  },
+  "12": {
+    "python": "❌",
+    "typescript": "❌",
+    "go": "❌"
+  },
+  "13": {
+    "python": "❌",
+    "typescript": "❌",
+    "go": "❌"
+  },
+  "14": {
+    "python": "❌",
+    "typescript": "❌",
+    "go": "❌"
+  },
+  "15": {
+    "python": "❌",
+    "typescript": "❌",
+    "go": "❌"
+  },
+  "16": {
+    "python": "❌",
+    "typescript": "❌",
+    "go": "❌"
+  },
+  "17": {
+    "python": "❌",
+    "typescript": "❌",
+    "go": "❌"
+  },
+  "18": {
+    "python": "❌",
+    "typescript": "❌",
+    "go": "❌"
+  },
+  "19": {
+    "python": "✅",
+    "typescript": "❌",
+    "go": "❌"
+  },
+  "20": {
+    "python": "❌",
+    "typescript": "❌",
+    "go": "❌"
+  },
+  "21": {
+    "python": "❌",
+    "typescript": "❌",
+    "go": "❌"
+  },
+  "22": {
+    "python": "❌",
+    "typescript": "❌",
+    "go": "❌"
+  },
+  "23": {
+    "python": "❌",
+    "typescript": "❌",
+    "go": "❌"
+  }
+}
