@@ -18,3 +18,42 @@ Let us list the factors of the first seven triangle numbers:
 We can see that 28 is the first triangle number to have over five divisors.
 What is the value of the first triangle number to have over five hundred divisors?
 """
+
+import math
+import time
+
+def count_factors(n: int) -> int:
+    factors = 2     # 1 and itself are always factors, so start with 2
+    i = 2           # skip 1, we know its a factor
+    isqrt = math.isqrt(n)   # use isqrt instead of sqrt for looping
+    while i <= isqrt:
+        if n % i == 0:
+            if i == n // i:  # this means i is the square root of n
+                factors += 1
+            else:
+                factors += 2
+                # NOTE: We know it is 2 factors each time, except for the square root of n.
+                # if i is a factor of n (eg. n % i == 0), then it means n // i must also
+                # be a factor. For example, 100 % 2 == 0 (2 is a factor), so 100 / 2 (50)
+                # is also a factor. Thus we increment by 2 instead of 1, each time.
+        i += 1
+    return factors
+
+start = time.time()
+current = 0
+iteration = 0
+
+# NOTE: This was benched at 3.40 seconds on an i5-10400T
+
+while True:
+    iteration += 1
+    current = current + iteration
+    factors = count_factors(current)
+    if factors >= 500:
+        print(f"current of {current} has {factors} # of divisors")
+        break
+
+end = time.time() - start
+print(f"took {end:.2f} seconds")
+
+# answer should be 76576500
