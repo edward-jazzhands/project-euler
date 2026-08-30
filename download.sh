@@ -87,6 +87,7 @@ sed -i \
 -e 's|\\to|->|g' \
 -e 's|\\cdots|...|g' \
 -e 's|\\dots|...|g' \
+-e 's|\ne|!=|g' \
 -e 's|\\times|*|g' \
 -e 's|\\mathbf||g' \
 -e 's|{align}||g' \
