@@ -113,5 +113,15 @@
     "python": "✅",
     "typescript": "❌",
     "go": "❌"
+  },
+  "24": {
+    "python": "✅",
+    "typescript": "❌",
+    "go": "❌"
+  },
+  "25": {
+    "python": "✅",
+    "typescript": "❌",
+    "go": "❌"
   }
 }

@@ -53,6 +53,7 @@ name_with_number="$puzzlenum"_"$puzzlename_clean"
 puzzledir="$SCRIPTDIR/solutions/$name_with_number"
 
 # check if the directory already exists
+# If this was not here it could over-write existing solutions
 if [ -d "$puzzledir" ]; then
     echo "Error: Directory already exists:"
     echo "$puzzledir"
@@ -94,6 +95,7 @@ sed -i \
 -e 's|\\begin||g' \
 -e 's|\\end||g' \
 -e 's|&amp;\\colon|:|g' \
+-e 's|&amp;=|=|g' \
 -e 's|<img[^>]*>|* see image *|g' \
 -e 's|<br>|\n|g' \
 -e 's|<[^>]*>||g' \
