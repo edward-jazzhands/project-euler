@@ -89,6 +89,10 @@ sed -i \
 -e 's|\\cdots|...|g' \
 -e 's|\\dots|...|g' \
 -e 's|\ne|!=|g' \
+-e 's|\lt|<|g' \
+-e 's|\le|<=|g' \
+-e 's|\gt|>|g' \
+-e 's|\ge|>=|g' \
 -e 's|\\times|*|g' \
 -e 's|\\mathbf||g' \
 -e 's|{align}||g' \
