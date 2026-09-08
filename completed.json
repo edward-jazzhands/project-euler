@@ -133,5 +133,10 @@
     "python": "✅",
     "typescript": "❌",
     "go": "❌"
+  },
+  "28": {
+    "python": "❌",
+    "typescript": "❌",
+    "go": "❌"
   }
 }
