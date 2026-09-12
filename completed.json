@@ -138,5 +138,20 @@
     "python": "✅",
     "typescript": "❌",
     "go": "❌"
+  },
+  "29": {
+    "python": "✅",
+    "typescript": "❌",
+    "go": "❌"
+  },
+  "30": {
+    "python": "✅",
+    "typescript": "❌",
+    "go": "❌"
+  },
+  "31": {
+    "python": "❌",
+    "typescript": "❌",
+    "go": "❌"
   }
 }

@@ -25,6 +25,21 @@ import time
 
 # VERSION 1: My original version
 
+# My original brute force naive version actually did this in an extremely inefficient
+# manner. Here I converted the fraction into its decimal format, and then examined that
+# as a string.
+
+# What I learned afterwards was that converting it into decimal format is just
+# a poor way of handling this. Think about it: decimal representation of a fraction
+# is by definition an imperfect and lossy representation. That's why you get the
+# repeating number patterns. The fraction does not perfectly fit into base 10.
+
+# So the better solution is to skip the decimal conversion, and work with the
+# fractions directly. I did not realize this when I started. But I can at least
+# say, this version worked and got the correct answer in about 2 seconds.
+# After getting the right answer with this naive solution, I looked up the
+# better solution, which is below this one.
+
 # NOTE: 2000 is the minimum precision to get the correct answer in this puzzle
 getcontext().prec = 2000
 

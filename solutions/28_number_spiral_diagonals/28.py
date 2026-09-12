@@ -31,20 +31,16 @@ in the same way?
 
 
 t = 1        # current target
-i = 0        # iteration
 y = 2        # step increase
 p = 0        # pattern
 t_sum = 1
-size = 3
-while size < 1002:
+while y+1 < 1002:   # y+1 = size (ie y=2 is 3x3, y=4 is 5x5, etc)
 
-    i += 1
     t += y
-    p += 1
     t_sum += t
 
+    p += 1
     if p % 4 == 0:
         y += 2
-        size += 2
 
 print(t_sum)

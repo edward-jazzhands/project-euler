@@ -84,29 +84,42 @@ fi
 
 # cleanup the file
 sed -i \
--e 's|\$||g' \
 -e 's|\\to|->|g' \
 -e 's|\\cdots|...|g' \
 -e 's|\\dots|...|g' \
--e 's|\ne|!=|g' \
--e 's|\lt|<|g' \
--e 's|\le|<=|g' \
--e 's|\gt|>|g' \
--e 's|\ge|>=|g' \
+-e 's|\\ne|!=|g' \
+-e 's|\\leq|<=|g' \
+-e 's|\\geq|>=|g' \
+-e 's|\\lt|<|g' \
+-e 's|\\le|<=|g' \
+-e 's|\\gt|>|g' \
+-e 's|\\ge|>=|g' \
 -e 's|\\times|*|g' \
+-e 's|\\%|%|g' \
+-e 's|\\_|_|g' \
+-e 's|\\{|{|g' \
+-e 's|\\}|}|g' \
 -e 's|\\mathbf||g' \
--e 's|{align}||g' \
 -e 's|\\begin||g' \
 -e 's|\\end||g' \
 -e 's|&amp;\\colon|:|g' \
 -e 's|&amp;=|=|g' \
+-e 's|&amp;|  |g' \
+-e 's|{align}||g' \
+-e 's|{rrrr}||g' \
+-e 's|{array}||g' \
 -e 's|<img[^>]*>|* see image *|g' \
 -e 's|<br>|\n|g' \
--e 's|<[^>]*>||g' \
+-e 's|<p>||g' \
+-e 's|</p>|\n|g' \
+-e 's|\$||g' \
 "$filepath"
 
+# this seems to cause problems:
+# -e 's|<[^>]*>||g' \     
+
 # remove all blank lines then word wrap
-sed -i '/^[[:space:]]*$/d' "$filepath"
+# sed -i '/^[[:space:]]*$/d' "$filepath"
 fold -s "$filepath" > "$filepath.tmp" && mv "$filepath.tmp" "$filepath"
 
 
